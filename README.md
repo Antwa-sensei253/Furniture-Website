@@ -39,6 +39,7 @@ FURNITURE/
     ├── signup.html    # Registration page
     ├── style.css      # Auth-specific styles
     └── [assets]       # (image.png)
+```
 
 <img width="1920" height="5857" alt="s1" src="https://github.com/user-attachments/assets/b10399c5-9c30-490a-a2a4-3ad6806194fe" /><img width="1920" height="5857" alt="s1" src="https://github.com/user-attachments/assets/8416871b-a14d-44ee-95ce-7c1a24bc97a2" />
 <img width="1920" height="2200" alt="s2" src="https://github.com/user-attachments/assets/e5855266-93ea-4770-9079-119e3c2e8270" />

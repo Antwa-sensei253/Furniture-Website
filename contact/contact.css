@@ -567,6 +567,20 @@ ul {
     }
 }
 
+.nav-overlay { display: none; }
+@media (max-width: 900px) {
+    .nav-overlay { display: block; position: fixed; inset:0; background: rgba(0,0,0,0.45); opacity:0; pointer-events:none; transition: opacity 200ms; z-index:1500; }
+    .nav-overlay.open { opacity:1; pointer-events:auto; }
+
+    .nav-links { position: fixed; top:0; right:0; transform: translateX(100%); width:260px; height:100vh; background:#fff; padding:72px 20px 20px; box-shadow:-6px 0 20px rgba(0,0,0,0.08); z-index:1600; pointer-events:none; transition: transform 260ms ease; }
+    .nav-links.active { transform: translateX(0); pointer-events:auto; }
+    .nav-close { position:absolute; top:12px; right:14px; font-size:1.4rem; background:none; border:none; cursor:pointer; }
+    .hamburger { display:block; }
+    body.menu-open { overflow:hidden; }
+}
+
+.nav-cart { display: flex; align-items: center; gap: 6px; margin-left: 12px; color: var(--text-main); }
+.nav-cart .cart-count { background: var(--accent); color: #fff; width:20px; height:20px; display:flex; align-items:center; justify-content:center; border-radius:50%; font-size:0.75rem; }
 @media (max-width: 768px) {
     .contact-form-container {
         flex-direction: column;
@@ -588,4 +602,11 @@ ul {
     .footer-nav {
         flex-direction: column;
     }
+}
+
+.hamburger { display: none; }
+@media (max-width: 900px) {
+    .hamburger { display: block; font-size:1.4rem; background:none; border:none; }
+    body.menu-open { overflow: hidden; }
+    .navbar { padding: 12px 5%; }
 }

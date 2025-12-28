@@ -205,3 +205,9 @@ input:focus {
     padding: 40px 20px;
   }
 }
+
+.hamburger { display: none; }
+@media (max-width: 900px) {
+  .hamburger { display: block; font-size: 1.4rem; background:none; border:none; }
+  body.menu-open { overflow: hidden; }
+}

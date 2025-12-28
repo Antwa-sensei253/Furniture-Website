@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart - Furniture Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../main/style.css">
+  <link rel="stylesheet" href="../contact/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="../main/index.html"><img src="../main/logo.png" alt="Furniture" class="site-logo" /></a>
+    </div>
+
+    <ul class="nav-links" role="menu">
+      <button class="nav-close" aria-label="Close menu" onclick="toggleMenu()">×</button>
+      <li><a href="../main/index.html">Home</a></li>
+      <li><a href="../about/about.html">About</a></li>
+      <li><a href="../contact/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right" style="display: flex; align-items: center; gap: 20px;">
+      <a href="../signup/signin.html" class="sign-in-btn" style="text-decoration: none; display: inline-block;">Sign
+        In</a>
+      <a href="cart.html" class="cart-link nav-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" style="display:none;">0</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main style="padding:40px 5%; min-height: 60vh;">
+    <h1 style="text-align: center; margin-bottom: 40px; color: var(--primary);">Your Shopping Cart</h1>
+
+    <div id="cart-items-container">
+      <!-- Populated by JS -->
+    </div>
+
+    <div style="margin-top:40px; display:flex; justify-content:center; gap:30px; align-items:center; flex-wrap: wrap;">
+      <div class="cart-total">Total: <span class="cart-total-price">$0.00</span></div>
+      <button id="checkout-btn" class="cta-btn">Checkout</button>
+    </div>
+  </main>
+
+  <footer class="new-footer" style="margin-top: 80px;">
+    <div style="text-align:center; padding: 20px;">&copy; 2025 Furniture Store. All rights reserved.</div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+
+</html>

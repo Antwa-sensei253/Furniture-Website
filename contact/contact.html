@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Furniture Store</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../main/style.css"> <!-- Ensure global styles are loaded -->
 </head>
+
 <body>
 
     <div class="top-bar">
-      <div class="top-bar-content">
-        <p>Example@gmail.com</p>
-        <div class="top-options">
-          <div class="nav-actions">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="message-icon fa-regular fa-message"></i>
-            <i class="heart-icon fa-regular fa-heart"></i>
-          </div>
+        <div class="top-bar-content">
+            <p>Example@gmail.com</p>
+            <div class="top-options">
+                <div class="nav-actions">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="message-icon fa-regular fa-message"></i>
+                    <i class="heart-icon fa-regular fa-heart"></i>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <nav class="navbar">
-      <div class="logo">
-        <a href="/"><img src="logo.png" alt="Furniture" class="site-logo" /></a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="../main/index.html" class="active">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="../contact/contact.html">Contact</a></li>
-        <button class="sign-in-btn"><a href="../signup/signin.html" style="text-decoration: none; color: inherit;"> Sign In</a></button>
-      </ul>
+        <div class="logo">
+            <a href="../main/index.html"><img src="../main/logo.png" alt="Furniture" class="site-logo" /></a>
+        </div>
+
+        <ul class="nav-links" role="menu">
+            <button class="nav-close" aria-label="Close menu" onclick="toggleMenu()">×</button>
+            <li><a href="../main/index.html">Home</a></li>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <div class="nav-right" style="display: flex; align-items: center; gap: 20px;">
+            <a href="../signup/signin.html" class="sign-in-btn"
+                style="text-decoration: none; display: inline-block;">Sign In</a>
+            <a href="../cart/cart.html" class="cart-link nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count" style="display:none;">0</span>
+            </a>
+            <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </nav>
 
 
@@ -48,6 +62,52 @@
             </div>
         </div>
     </header>
+
+    <!-- Why Choose Us (Moved from bottom) -->
+    <div class="why-choose-us" style="margin-top: 0; padding-top: 80px;">
+        <div class="wcu-content">
+            <h2>Why Choose Us</h2>
+            <p class="wcu-desc">
+                Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what
+                was to be done.
+            </p>
+            <div class="wcu-grid">
+                <div class="wcu-item">
+                    <div class="wcu-icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <h4>Fast & Free Shipping</h4>
+                    <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
+                </div>
+                <div class="wcu-item">
+                    <div class="wcu-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <h4>Easy to Shop</h4>
+                    <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
+                </div>
+                <div class="wcu-item">
+                    <div class="wcu-icon">
+                        <i class="fa-solid fa-life-ring"></i>
+                    </div>
+                    <h4>24/7 Support</h4>
+                    <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
+                </div>
+                <div class="wcu-item">
+                    <div class="wcu-icon">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+                    <h4>Hassle Free Returns</h4>
+                    <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
+                </div>
+            </div>
+        </div>
+        <div class="wcu-image">
+            <!-- Use local image from main directory -->
+            <img src="../main/image3.png" alt="Why Choose Us Interior" />
+        </div>
+    </div>
+
 
     <section class="info-cards-section">
         <div class="info-card">
@@ -74,7 +134,8 @@
 
     <section class="contact-form-container">
         <div class="form-visual">
-            <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1000&auto=format&fit=crop" alt="Minimalist Interior">
+            <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1000&auto=format&fit=crop"
+                alt="Minimalist Interior" loading="lazy" decoding="async">
         </div>
 
         <div class="form-content">
@@ -111,43 +172,42 @@
         </div>
     </section>
 
-
     <footer class="new-footer">
         <div class="footer-container">
-            
+
             <div class="footer-top">
-                
+
                 <div class="footer-brand">
-                  <div class="logo">
-                    <a href="/"><img src="logo.png" alt="Furniture" class="footer-logo" /></a>
-                  </div>
+                    <div class="logo">
+                        <a href="../main/index.html"><img src="../main/logo.png" alt="Furniture" class="footer-logo"
+                                loading="lazy" decoding="async" /></a>
+                    </div>
                     <p class="brand-desc">Lorem Ipsum is simply dummy text of the site.</p>
-                    
+
                     <ul class="contact-info">
                         <li>
-                            <i class="fa-solid fa-location-dot"></i> 
+                            <i class="fa-solid fa-location-dot"></i>
                             <span>Ismailia</span>
                         </li>
                         <li>
-                            <i class="fa-solid fa-phone"></i> 
+                            <i class="fa-solid fa-phone"></i>
                             <span>01234567890</span>
                         </li>
                         <li>
-                            <i class="fa-solid fa-envelope"></i> 
+                            <i class="fa-solid fa-envelope"></i>
                             <span>example@gmail.com</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer-nav">
-                    
+
                     <div class="footer-col">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="#">About</a></li>
+                            <li><a href="../about/about.html">About</a></li>
                             <li><a href="#">All Products</a></li>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Community</a></li>
+                            <li><a href="../signup/signin.html">Login</a></li>
                         </ul>
                     </div>
 
@@ -166,7 +226,7 @@
                     <div class="footer-col">
                         <h4>Customer Care</h4>
                         <ul>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
                             <li><a href="#">Live Chat</a></li>
                         </ul>
                     </div>
@@ -191,5 +251,7 @@
         </div>
     </footer>
 
+    <script src="../script.js" defer></script>
 </body>
+
 </html>

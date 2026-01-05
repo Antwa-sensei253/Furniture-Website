@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart - Furniture Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F2C59',
+            accent: '#FF9E44',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans">
+  <nav class="flex justify-between items-center py-5 px-[5%] bg-white sticky top-0 z-[100] shadow-sm">
+    <div class="flex items-center font-bold text-xl gap-2.5">
+      <a href="../main/index.html"><img src="../main/logo.png" alt="Furniture" class="block w-[140px] h-auto" /></a>
+    </div>
+
+    <ul class="flex gap-8" role="menu">
+      <button class="nav-close hidden" aria-label="Close menu" onclick="toggleMenu()">×</button>
+      <li><a href="../main/index.html" class="font-medium text-gray-500 text-sm hover:text-primary hover:font-semibold">Home</a></li>
+      <li><a href="../about/about.html" class="font-medium text-gray-500 text-sm hover:text-primary hover:font-semibold">About</a></li>
+      <li><a href="../contact/contact.html" class="font-medium text-gray-500 text-sm hover:text-primary hover:font-semibold">Contact</a></li>
+    </ul>
+
+    <div class="flex items-center gap-5">
+      <a href="../signup/signin.html" class="bg-primary text-white border-none py-2 px-5 rounded-full font-medium no-underline inline-block">Sign
+        In</a>
+      <a href="cart.html" class="cart-link nav-cart flex items-center gap-1.5 text-gray-800 text-xl">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count hidden">0</span>
+      </a>
+      <button class="hamburger hidden bg-none border-none text-2xl" aria-label="Toggle menu" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="py-10 px-[5%] min-h-[60vh]">
+    <h1 class="text-center mb-10 text-primary text-3xl font-bold">Your Shopping Cart</h1>
+
+    <div id="cart-items-container" class="max-w-4xl mx-auto">
+    </div>
+
+    <div class="mt-10 flex justify-center gap-8 items-center flex-wrap">
+      <div class="text-2xl font-bold text-primary">Total: <span class="cart-total-price">$0.00</span></div>
+      <button id="checkout-btn" class="bg-primary text-white border-none py-3 px-8 rounded-full text-base cursor-pointer">Checkout</button>
+    </div>
+  </main>
+
+  <footer class="bg-[#f9f9f9] py-5 mt-20">
+    <div class="text-center">&copy; 2025 Furniture Store. All rights reserved.</div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+
+</html>

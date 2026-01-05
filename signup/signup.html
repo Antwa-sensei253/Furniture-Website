@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-blue': '#1e3a5f',
+              'accent-orange': '#f39c12',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              script: ['Dancing Script', 'cursive'],
+            },
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-sans h-screen w-full overflow-hidden">
+    <div class="flex h-screen w-full">
+      <div class="flex-1 bg-white py-10 px-20 flex flex-col justify-center relative overflow-hidden">
+        <div class="absolute w-[150px] h-[150px] bg-gray-300 rounded-full top-[15%] -right-[75px] z-0"></div>
+        <div class="absolute w-[200px] h-[200px] bg-gray-300 rounded-full bottom-[5%] -left-[100px] z-0"></div>
+        <div class="relative z-10 max-w-md mx-auto w-full">
+          <h1 class="font-script text-[3.5rem] text-primary-blue mb-1">Create Account</h1>
+          <p class="text-gray-400 italic text-sm mb-8 font-script">prepare your dream house with one click</p>
+
+          <form>
+            <div class="mb-4">
+              <label class="block text-sm text-gray-800 mb-1 font-medium">User Name <span class="text-red-500">*</span></label>
+              <input type="text" required class="w-full py-3 px-4 bg-gray-50 border-none rounded-md text-sm outline-none focus:bg-gray-100 focus:shadow-[0_0_0_2px_rgba(30,58,95,0.1)]" />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm text-gray-800 mb-1 font-medium">Email <span class="text-red-500">*</span></label>
+              <input type="email" required class="w-full py-3 px-4 bg-gray-50 border-none rounded-md text-sm outline-none focus:bg-gray-100 focus:shadow-[0_0_0_2px_rgba(30,58,95,0.1)]" />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm text-gray-800 mb-1 font-medium">Phone <span class="text-red-500">*</span></label>
+              <input type="tel" required class="w-full py-3 px-4 bg-gray-50 border-none rounded-md text-sm outline-none focus:bg-gray-100 focus:shadow-[0_0_0_2px_rgba(30,58,95,0.1)]" />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm text-gray-800 mb-1 font-medium">Password <span class="text-red-500">*</span></label>
+              <input type="password" required class="w-full py-3 px-4 bg-gray-50 border-none rounded-md text-sm outline-none focus:bg-gray-100 focus:shadow-[0_0_0_2px_rgba(30,58,95,0.1)]" />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm text-gray-800 mb-1 font-medium">Confirm Password <span class="text-red-500">*</span></label>
+              <input type="password" required class="w-full py-3 px-4 bg-gray-50 border-none rounded-md text-sm outline-none focus:bg-gray-100 focus:shadow-[0_0_0_2px_rgba(30,58,95,0.1)]" />
+            </div>
+
+            <button type="submit" class="w-full py-3 rounded-md border-none cursor-pointer text-base font-medium mt-2.5 mb-4 bg-primary-blue text-white transition-all hover:bg-[#162d4a]">
+              create account
+            </button>
+
+            <button type="button" class="w-full py-3 rounded-md border border-gray-300 cursor-pointer text-base font-medium mt-2.5 bg-white text-primary-blue flex items-center justify-center gap-2.5 transition-all hover:bg-gray-50">
+              <span class="font-bold text-accent-orange text-xl">G</span> continue with google
+            </button>
+          </form>
+
+          <div class="text-center mt-5 text-sm text-gray-500">
+            Already have account, <a href="signin.html" class="text-accent-orange no-underline font-medium hover:underline">sign in</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-1 bg-cover bg-[70%_center] bg-no-repeat hidden md:block" style="background-image: url('image.png');"></div>
+    </div>
+  </body>
+</html>

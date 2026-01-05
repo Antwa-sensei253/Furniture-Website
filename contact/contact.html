@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Furniture Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F2C59',
+                        accent: '#FF9E44',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans">
+
+    <div class="bg-gray-100 py-2 px-[5%] text-xs text-gray-500 border-b border-gray-200">
+        <div class="flex justify-between items-center">
+            <p>Example@gmail.com</p>
+            <div class="flex gap-5">
+                <div class="flex items-center gap-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="message-icon fa-regular fa-message"></i>
+                    <i class="heart-icon fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="flex justify-between items-center py-5 px-[5%] bg-white sticky top-0 z-[100] shadow-sm">
+        <div class="flex items-center font-bold text-xl gap-2.5">
+            <a href="../main/index.html"><img src="../main/logo.png" alt="Furniture" class="block w-[140px] h-auto" /></a>
+        </div>
+
+        <ul class="flex gap-8" role="menu">
+            <button class="nav-close hidden" aria-label="Close menu" onclick="toggleMenu()">×</button>
+            <li><a href="../main/index.html" class="font-medium text-gray-500 text-sm hover:text-primary hover:font-semibold">Home</a></li>
+            <li><a href="../about/about.html" class="font-medium text-gray-500 text-sm hover:text-primary hover:font-semibold">About</a></li>
+            <li><a href="contact.html" class="font-semibold text-primary text-sm">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-5">
+            <a href="../signup/signin.html" class="bg-primary text-white border-none py-2 px-5 rounded-full font-medium no-underline inline-block">Sign In</a>
+            <a href="../cart/cart.html" class="cart-link nav-cart flex items-center gap-1.5 text-gray-800 text-xl">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count hidden">0</span>
+            </a>
+            <button class="hamburger hidden bg-none border-none text-2xl" aria-label="Toggle menu" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="bg-cover bg-center bg-no-repeat h-[300px] relative flex items-center justify-center text-center text-white mb-0" style="background-image: url('contact.png');">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10">
+            <h1 class="text-4xl mb-2.5 font-semibold">Contact Us</h1>
+            <div class="flex items-center justify-center gap-2.5 text-sm font-light">
+                <span>Home</span> <i class="fa-solid fa-chevron-right text-xs"></i> <span>Contact Us</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-[5%] bg-gray-50 flex flex-wrap gap-16 items-center max-w-7xl mx-auto transition-all">
+        <div class="flex-1 min-w-[300px]">
+            <h2 class="text-4xl text-primary mb-5 font-bold">Why Choose Us</h2>
+            <p class="text-gray-500 mb-10 leading-relaxed text-base">
+                Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what
+                was to be done.
+            </p>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8">
+                <div class="flex flex-col items-start gap-2.5">
+                    <div class="relative w-12 h-12 flex items-center justify-center mb-2.5">
+                        <div class="absolute w-10 h-10 bg-blue-100 rounded-full top-1.5 left-0 z-0"></div>
+                        <i class="fa-solid fa-truck relative z-10 text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="text-base font-bold text-gray-800 mb-1">Fast & Free Shipping</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
+                </div>
+                <div class="flex flex-col items-start gap-2.5">
+                    <div class="relative w-12 h-12 flex items-center justify-center mb-2.5">
+                        <div class="absolute w-10 h-10 bg-blue-100 rounded-full top-1.5 left-0 z-0"></div>
+                        <i class="fa-solid fa-bag-shopping relative z-10 text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="text-base font-bold text-gray-800 mb-1">Easy to Shop</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
+                </div>
+                <div class="flex flex-col items-start gap-2.5">
+                    <div class="relative w-12 h-12 flex items-center justify-center mb-2.5">
+                        <div class="absolute w-10 h-10 bg-blue-100 rounded-full top-1.5 left-0 z-0"></div>
+                        <i class="fa-solid fa-life-ring relative z-10 text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="text-base font-bold text-gray-800 mb-1">24/7 Support</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
+                </div>
+                <div class="flex flex-col items-start gap-2.5">
+                    <div class="relative w-12 h-12 flex items-center justify-center mb-2.5">
+                        <div class="absolute w-10 h-10 bg-blue-100 rounded-full top-1.5 left-0 z-0"></div>
+                        <i class="fa-solid fa-rotate relative z-10 text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="text-base font-bold text-gray-800 mb-1">Hassle Free Returns</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 min-w-[300px] relative">
+            <img src="../main/image3.png" alt="Why Choose Us Interior" class="w-full h-auto rounded-3xl shadow-lg" />
+        </div>
+    </section>
+
+    <section class="flex justify-center gap-10 py-20 px-[5%] mt-0 flex-wrap bg-white relative z-10">
+        <div class="bg-white w-80 min-h-[120px] flex items-center justify-center relative rounded-2xl shadow-md mt-8 transition-all hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#FAF4EB] rounded-full flex items-center justify-center text-accent text-lg shadow-md z-10">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <p class="font-semibold text-primary mt-4 text-base">01234567890</p>
+        </div>
+
+        <div class="bg-white w-80 min-h-[120px] flex items-center justify-center relative rounded-2xl shadow-md mt-8 transition-all hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#FAF4EB] rounded-full flex items-center justify-center text-accent text-lg shadow-md z-10">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <p class="font-semibold text-primary mt-4 text-base">Example@gmail.com</p>
+        </div>
+
+        <div class="bg-white w-80 min-h-[120px] flex items-center justify-center relative rounded-2xl shadow-md mt-8 transition-all hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#FAF4EB] rounded-full flex items-center justify-center text-accent text-lg shadow-md z-10">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p class="font-semibold text-primary mt-4 text-base">Ismailia, ITI</p>
+        </div>
+    </section>
+
+    <section class="flex justify-center items-center gap-20 py-24 px-[5%] bg-gray-50 mt-0 max-w-7xl mx-auto">
+        <div class="flex-1 max-w-[450px]">
+            <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1000&auto=format&fit=crop"
+                alt="Minimalist Interior" loading="lazy" decoding="async" class="w-full h-[450px] object-cover rounded-3xl shadow-lg">
+        </div>
+
+        <div class="flex-[1.2] max-w-[600px]">
+            <h2 class="text-3xl text-primary mb-4 font-bold">Send Us a Message</h2>
+            <p class="text-gray-500 mb-8 leading-relaxed text-sm">We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form>
+                <div class="flex gap-8 mb-6">
+                    <div class="flex-1 flex flex-col gap-2.5">
+                        <label class="font-medium text-sm text-gray-800">First Name<span class="text-red-600 ml-1">*</span></label>
+                        <input type="text" required class="bg-white border border-gray-300 py-4 px-5 rounded-lg text-sm outline-none transition-all focus:border-primary focus:shadow-[0_0_0_3px_rgba(15,44,89,0.1)]">
+                    </div>
+                    <div class="flex-1 flex flex-col gap-2.5">
+                        <label class="font-medium text-sm text-gray-800">Last Name<span class="text-red-600 ml-1">*</span></label>
+                        <input type="text" required class="bg-white border border-gray-300 py-4 px-5 rounded-lg text-sm outline-none transition-all focus:border-primary focus:shadow-[0_0_0_3px_rgba(15,44,89,0.1)]">
+                    </div>
+                </div>
+
+                <div class="flex gap-8 mb-6">
+                    <div class="flex-1 flex flex-col gap-2.5">
+                        <label class="font-medium text-sm text-gray-800">Email<span class="text-red-600 ml-1">*</span></label>
+                        <input type="email" required class="bg-white border border-gray-300 py-4 px-5 rounded-lg text-sm outline-none transition-all focus:border-primary focus:shadow-[0_0_0_3px_rgba(15,44,89,0.1)]">
+                    </div>
+                    <div class="flex-1 flex flex-col gap-2.5">
+                        <label class="font-medium text-sm text-gray-800">Phone<span class="text-red-600 ml-1">*</span></label>
+                        <input type="tel" required class="bg-white border border-gray-300 py-4 px-5 rounded-lg text-sm outline-none transition-all focus:border-primary focus:shadow-[0_0_0_3px_rgba(15,44,89,0.1)]">
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2.5 mb-8">
+                    <label class="font-medium text-sm text-gray-800">Your Message<span class="text-red-600 ml-1">*</span></label>
+                    <textarea rows="5" required class="bg-white border border-gray-300 py-4 px-5 rounded-lg text-sm outline-none resize-none transition-all focus:border-primary focus:shadow-[0_0_0_3px_rgba(15,44,89,0.1)]"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-primary text-white border-none py-4 rounded-lg text-base font-medium cursor-pointer transition-all hover:bg-[#0a1e3f] hover:-translate-y-0.5 hover:shadow-lg">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="py-24 px-[5%] bg-white mt-0">
+        <div class="max-w-7xl mx-auto flex gap-16 items-center flex-wrap">
+            <div class="flex-1 min-w-[300px]">
+                <h2 class="text-4xl text-primary mb-5 font-bold">Visit Our Showroom</h2>
+                <p class="text-gray-500 leading-relaxed mb-10 text-base">
+                    Experience our furniture collection in person. Our showroom features beautifully designed spaces 
+                    where you can see, touch, and feel the quality of our products.
+                </p>
+                <div class="flex flex-col gap-8 mb-10">
+                    <div class="flex gap-5 items-start">
+                        <i class="fa-solid fa-clock text-3xl text-accent mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h4 class="text-lg text-primary mb-2 font-semibold">Opening Hours</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-1">Monday - Friday: 9:00 AM - 8:00 PM</p>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-1">Saturday - Sunday: 10:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 items-start">
+                        <i class="fa-solid fa-map-location-dot text-3xl text-accent mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h4 class="text-lg text-primary mb-2 font-semibold">Location</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-1">123 Furniture Street</p>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-1">Ismailia, ITI</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 items-start">
+                        <i class="fa-solid fa-parking text-3xl text-accent mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h4 class="text-lg text-primary mb-2 font-semibold">Free Parking</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-1">Complimentary parking available</p>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-1">for all visitors</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="inline-block bg-primary text-white py-4 px-10 rounded-full font-medium transition-all hover:bg-[#0a1e3f] hover:-translate-y-0.5 hover:shadow-lg no-underline">Get Directions</a>
+            </div>
+            <div class="flex-1 min-w-[300px]">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop" 
+                     alt="Furniture Showroom" loading="lazy" class="w-full h-[500px] object-cover rounded-3xl shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#f9f9f9] py-16 px-[5%] text-gray-600 relative mt-0">
+        <div class="max-w-6xl mx-auto relative">
+            <div class="flex flex-wrap justify-between gap-10 mb-16">
+                <div class="flex-1 min-w-[250px]">
+                    <div class="flex items-center font-bold text-xl gap-2.5 mb-5">
+                        <a href="../main/index.html"><img src="../main/logo.png" alt="Furniture" class="block w-[120px] h-auto"
+                                loading="lazy" decoding="async" /></a>
+                    </div>
+                    <p class="text-sm leading-relaxed text-gray-500 mb-5 max-w-[250px]">Lorem Ipsum is simply dummy text of the site.</p>
+
+                    <ul class="list-none">
+                        <li class="flex items-center gap-4 mb-4 text-sm text-gray-800 font-medium">
+                            <i class="fa-solid fa-location-dot text-black w-5"></i>
+                            <span>Ismailia</span>
+                        </li>
+                        <li class="flex items-center gap-4 mb-4 text-sm text-gray-800 font-medium">
+                            <i class="fa-solid fa-phone text-black w-5"></i>
+                            <span>01234567890</span>
+                        </li>
+                        <li class="flex items-center gap-4 mb-4 text-sm text-gray-800 font-medium">
+                            <i class="fa-solid fa-envelope text-black w-5"></i>
+                            <span>example@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-[2] flex justify-between flex-wrap gap-8">
+                    <div>
+                        <h4 class="text-lg text-black mb-6 font-bold">Company</h4>
+                        <ul class="list-none">
+                            <li class="mb-4"><a href="../about/about.html" class="text-[#7a869a] text-sm transition-colors hover:text-primary">About</a></li>
+                            <li class="mb-4"><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">All Products</a></li>
+                            <li class="mb-4"><a href="../signup/signin.html" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Login</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg text-black mb-6 font-bold">Categories</h4>
+                        <ul class="grid grid-cols-2 gap-y-4 gap-x-10 list-none">
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Sofas</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Tables</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Lamps</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Doors</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Chairs</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Drawers</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg text-black mb-6 font-bold">Customer Care</h4>
+                        <ul class="list-none">
+                            <li class="mb-4"><a href="contact.html" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Contact us</a></li>
+                            <li class="mb-4"><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Live Chat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="absolute right-0 bottom-16 bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center shadow-[0_5px_15px_rgba(255,158,68,0.4)] transition-transform hover:-translate-y-1">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+
+            <div class="border-t border-gray-200 pt-8 flex justify-between items-center">
+                <div class="text-[#7a869a] text-sm flex items-center gap-1">
+                    <i class="fa-regular fa-copyright"></i> 2023, All Rights are Reserved
+                </div>
+                <div class="flex gap-5">
+                    <a href="#" class="text-black text-xl transition-colors hover:text-primary"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-black text-xl transition-colors hover:text-primary"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-black text-xl transition-colors hover:text-primary"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js" defer></script>
+</body>
+
+</html>

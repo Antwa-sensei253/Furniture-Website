@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Furniture Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F2C59',
+                        accent: '#FF9E44',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans">
+
+    <div class="bg-gray-100 py-2 px-[5%] text-xs text-gray-500 border-b border-gray-200">
+        <div class="flex justify-between items-center">
+            <p>Example@gmail.com</p>
+            <div class="flex gap-5">
+                <div class="flex items-center gap-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="message-icon fa-regular fa-message"></i>
+                    <i class="heart-icon fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="flex justify-between items-center py-5 px-[5%] bg-white sticky top-0 z-[100] shadow-sm">
+        <div class="flex items-center font-bold text-xl gap-2.5">
+            <a href="../main/index.html"><img src="../main/logo.png" alt="Furniture" class="block w-[140px] h-auto" /></a>
+        </div>
+
+        <ul class="flex gap-8" role="menu">
+            <button class="nav-close hidden" aria-label="Close menu" onclick="toggleMenu()">×</button>
+            <li><a href="../main/index.html" class="font-medium text-gray-500 text-sm hover:text-primary hover:font-semibold">Home</a></li>
+            <li><a href="about.html" class="font-semibold text-primary text-sm">About</a></li>
+            <li><a href="../contact/contact.html" class="font-medium text-gray-500 text-sm hover:text-primary hover:font-semibold">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-5">
+            <a href="../signup/signin.html" class="bg-primary text-white border-none py-2 px-5 rounded-full font-medium no-underline inline-block">Sign In</a>
+            <a href="../cart/cart.html" class="cart-link nav-cart flex items-center gap-1.5 text-gray-800 text-xl">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count hidden">0</span>
+            </a>
+            <button class="hamburger hidden bg-none border-none text-2xl" aria-label="Toggle menu" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="flex items-center justify-center text-center pt-16 relative min-h-[50vh] bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(15, 44, 89, 0.7), rgba(15, 44, 89, 0.5)), url('../main/image3.png');">
+        <div class="max-w-3xl mx-auto relative z-10">
+            <h1 class="text-5xl mb-5 text-white drop-shadow-md">About Us</h1>
+            <p class="text-white text-xl drop-shadow-sm">Building comfort, one piece at a time.</p>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 px-[5%]">
+        <div class="flex flex-wrap gap-12 items-center mb-20">
+            <div class="flex-1 min-w-[300px]">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop"
+                    alt="Our Workshop"
+                    class="w-full rounded-3xl shadow-lg h-96 object-cover">
+            </div>
+            <div class="flex-1 min-w-[300px]">
+                <h3 class="text-3xl text-primary mb-5">Our Story</h3>
+                <p class="leading-relaxed text-gray-500 mb-5">
+                    Founded in 2010, `Furniture Store` began with a simple mission: to make high-quality, design-forward
+                    furniture accessible to everyone. What started as a small workshop has grown into a beloved brand
+                    known for reliability and style.
+                </p>
+            </div>
+        </div>
+
+        <div class="py-20 px-[5%] bg-white text-center">
+            <h2 class="text-4xl text-primary mb-16">Meet Our Designers</h2>
+            <div class="flex flex-wrap justify-center gap-10">
+                <div class="bg-gray-50 rounded-3xl overflow-hidden shadow-lg w-80 transition-transform hover:-translate-y-2.5 border border-gray-100">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"
+                            alt="Sarah Jenkins" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl text-gray-800 mb-1">Sarah Jenkins</h3>
+                        <p class="text-accent text-sm font-medium mb-4">Lead Interior Designer</p>
+                        <div class="flex justify-center gap-4">
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 transition-all hover:bg-primary hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 transition-all hover:bg-primary hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 transition-all hover:bg-primary hover:text-white"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-3xl overflow-hidden shadow-lg w-80 transition-transform hover:-translate-y-2.5 border border-gray-100">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop"
+                            alt="David Ross" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl text-gray-800 mb-1">David Ross</h3>
+                        <p class="text-accent text-sm font-medium mb-4">Product Architect</p>
+                        <div class="flex justify-center gap-4">
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 transition-all hover:bg-primary hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 transition-all hover:bg-primary hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 transition-all hover:bg-primary hover:text-white"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-3xl overflow-hidden shadow-lg w-80 transition-transform hover:-translate-y-2.5 border border-gray-100">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop"
+                            alt="Emily Chen" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl text-gray-800 mb-1">Emily Chen</h3>
+                        <p class="text-accent text-sm font-medium mb-4">Creative Director</p>
+                        <div class="flex justify-center gap-4">
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 transition-all hover:bg-primary hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 transition-all hover:bg-primary hover:text-white"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 transition-all hover:bg-primary hover:text-white"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-[5%] bg-[#fafafa] text-center">
+        <h2 class="text-4xl text-gray-900 mb-16">Testimonials</h2>
+        <div class="relative max-w-4xl mx-auto px-16">
+            <button class="absolute top-[30%] left-0 bg-gray-200 border-none w-11 h-11 rounded-full cursor-pointer flex items-center justify-center transition-colors hover:bg-accent hover:text-white">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-10">
+                    "Donec nibh magna, interdum quis massa sed, rhoncus laoreet quam. Mauris accumsan felis fermentum
+                    euismod egestas. Mauris ante augue, cursus sit amet arcu a, maximus suscipit nibh. Integer vel nibh
+                    tellus. Pellentesque in risus non dui venenatis sollicitudin sed vitae diam."
+                </p>
+                <div class="flex flex-col items-center gap-2.5">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Zain Bin Noor" class="w-15 h-15 rounded-full object-cover">
+                    <span class="font-bold text-gray-900 text-base">Zain Bin Noor</span>
+                    <span class="text-sm text-gray-500">CEO, Co-Founder, XYZ Inc.</span>
+                </div>
+            </div>
+
+            <button class="absolute top-[30%] right-0 bg-accent border-none w-11 h-11 rounded-full cursor-pointer flex items-center justify-center text-white">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="flex justify-center gap-2 mt-10">
+            <span class="w-2 h-2 bg-gray-300 rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-teal-800 rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-gray-300 rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-gray-300 rounded-full cursor-pointer"></span>
+        </div>
+    </section>
+
+    <footer class="bg-[#f9f9f9] py-16 px-[5%] text-gray-600 relative">
+        <div class="max-w-6xl mx-auto relative">
+            <div class="flex flex-wrap justify-between gap-10 mb-16">
+                <div class="flex-1 min-w-[250px]">
+                    <div class="flex items-center font-bold text-xl gap-2.5 mb-5">
+                        <a href="../main/index.html"><img src="../main/logo.png" alt="Furniture" class="block w-[120px] h-auto"
+                                loading="lazy" decoding="async" /></a>
+                    </div>
+                    <p class="text-sm leading-relaxed text-gray-500 mb-5 max-w-[250px]">Lorem Ipsum is simply dummy text of the site.</p>
+
+                    <ul class="list-none">
+                        <li class="flex items-center gap-4 mb-4 text-sm text-gray-800 font-medium">
+                            <i class="fa-solid fa-location-dot text-black w-5"></i>
+                            <span>Ismailia</span>
+                        </li>
+                        <li class="flex items-center gap-4 mb-4 text-sm text-gray-800 font-medium">
+                            <i class="fa-solid fa-phone text-black w-5"></i>
+                            <span>01234567890</span>
+                        </li>
+                        <li class="flex items-center gap-4 mb-4 text-sm text-gray-800 font-medium">
+                            <i class="fa-solid fa-envelope text-black w-5"></i>
+                            <span>example@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-[2] flex justify-between flex-wrap gap-8">
+                    <div>
+                        <h4 class="text-lg text-black mb-6 font-bold">Company</h4>
+                        <ul class="list-none">
+                            <li class="mb-4"><a href="about.html" class="text-[#7a869a] text-sm transition-colors hover:text-primary">About</a></li>
+                            <li class="mb-4"><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">All Products</a></li>
+                            <li class="mb-4"><a href="../signup/signin.html" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Login</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg text-black mb-6 font-bold">Categories</h4>
+                        <ul class="grid grid-cols-2 gap-y-4 gap-x-10 list-none">
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Sofas</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Tables</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Lamps</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Doors</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Chairs</a></li>
+                            <li><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Drawers</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg text-black mb-6 font-bold">Customer Care</h4>
+                        <ul class="list-none">
+                            <li class="mb-4"><a href="../contact/contact.html" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Contact us</a></li>
+                            <li class="mb-4"><a href="#" class="text-[#7a869a] text-sm transition-colors hover:text-primary">Live Chat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="absolute right-0 bottom-16 bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center shadow-[0_5px_15px_rgba(255,158,68,0.4)] transition-transform hover:-translate-y-1">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+
+            <div class="border-t border-gray-200 pt-8 flex justify-between items-center">
+                <div class="text-[#7a869a] text-sm flex items-center gap-1">
+                    <i class="fa-regular fa-copyright"></i> 2023, All Rights are Reserved
+                </div>
+                <div class="flex gap-5">
+                    <a href="#" class="text-black text-xl transition-colors hover:text-primary"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-black text-xl transition-colors hover:text-primary"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-black text-xl transition-colors hover:text-primary"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js" defer></script>
+</body>
+
+</html>
